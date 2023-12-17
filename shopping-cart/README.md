@@ -1,14 +1,11 @@
-# TypeScript Jest boilerplate
+# Shopping Cart
 
-This boilerplate uses TypeScript and Jest as testing framework.
-Test files should are picked based on their name, here's a few examples that will get picked up by Jest:
+## Requirements:
+Write a function that calculates the shipping costs for a given Amazon order. The business rules are as follows:
 
-- `MyClass.test.ts`
-- `MyJavaScriptModule.test.js`
-- `MyComponent.test.tsx`
-- `SubFolder/MyClass.test.ts`
-
-You can customize the regexp and jest configuration by editing the `package.json` file.
+1. Shipping cost of $3.50 per product.
+2. Minimum shipping cost per order is $4.99
+3. Prime members get free shipping for primeEligible products.
 
 ## Installing dependencies
 
@@ -30,7 +27,7 @@ yarn test
 yarn test --clearCache --debug
 
 # Run tests for a specific file
-yarn test MyFile.test.ts
+yarn test my-file.test.ts
 ```
 
 A few other NPM scripts are provided for convenience, they all support custom arguments as described above.
